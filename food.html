@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Counter</title>
+  <link rel="stylesheet" href="food.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="container">
+      <div class="logo">
+        <img src="the-ticket-logo.png" alt="logo">
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search Ticket Booking">
+      </div>
+      <ul>
+        <li id="profile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="black">
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+
+            </svg><br> PROFILE</a>
+          <div class="login-page">
+            <a href="login.html"> <button id="log">Log in</button> </a> <br>
+            <a href="#"><button id="sing">Sign in</button> </a> <br><br><br>
+            <input type="checkbox" name="" id="">I Already have a Account
+          </div>
+        </li>
+      </ul>
+      <div class="burger1" onclick="showSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#000000">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <nav class="l1" id="navbar">
+    <li onclick="hideSidebar()" class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#ee3f3f">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="movie.html">Movies</a></li>
+    <li><a href="event.html">Events</a></li>
+    <li><a href="sport.html">Sports</a></li>
+    <li><a href="food.html">Foods</a></li>
+
+    <div class="box">
+      <div class="cart-count">0</div>
+      <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+    </div>
+
+    <div class="cart">
+      <div class="cart-title">Cart Items</div>
+      <div class="cart-content">
+
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">Rs.0</div>
+    </div>
+
+    <button class="btn-buy">Place Order</button>
+
+    <ion-icon name="close" id="cart-close"></ion-icon>
+
+    </div>
+  </div>
+</nav>
+</header>
+<div class="container1">
+  <h2 class="title">Discover the Best Food</h2>
+  <div class="shop-content">
+
+
+    <div class="food-box">
+      <div class="pic"><img src="burger1.jpeg" class="food-img"></div>
+      <h2 class="food-title">Burger</h2>
+      <span class="food-price">Rs.140</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+
+    <div class="food-box">
+      <div class="pic"><img src="momos.jpeg" class="food-img"></div>
+      <h2 class="food-title">Momos</h2>
+      <span class="food-price">Rs.105</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+      <div class="pic"><img src="popcorn.jpeg" class="food-img"></div>
+      <h2 class="food-title">PopCorn</h2>
+      <span class="food-price">Rs.80</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+      <div class="pic"><img src="puffs.jpeg" class="food-img"></div>
+      <h2 class="food-title">Puffs</h2>
+      <span class="food-price">Rs.55</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+      <div class="pic"><img src="Shawarma.jpg" class="food-img"></div>
+      <h2 class="food-title">Shawarma</h2>
+      <span class="food-price">Rs.25</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+      <div class="pic"><img src="nuggets.jpeg" class="food-img"></div>
+      <h2 class="food-title">Nuggets</h2>
+      <span class="food-price">Rs.150</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+
+    <div class="food-box">
+      <div class="pic"><img src="puffs.jpeg" class="food-img"></div>
+      <h2 class="food-title">Egg Puffs</h2>
+      <span class="food-price">Rs.65</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+
+    <div class="food-box">
+      <div class="pic"><img src="popcorn.jpeg" class="food-img"></div>
+      <h2 class="food-title">Spicy Popcorn</h2>
+      <span class="food-price">Rs.95</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="footer1">
+      <div class="f1 f0"><img src="G3 (1).png" alt="img">
+        <p>Subcribe to the latest newsletter</p>
+      </div>
+      <div class="f2 f0"><img src="G3 (2).png" alt="img">
+        <p>24/7 Customer Support</p>
+      </div>
+      <div class="f3 f0"><img src="G3 (3).png" alt="img">
+        <p>Booking Confirmation</p>
+      </div>
+    </div>
+
+    <div class="icon">
+      <i class="fa-brands fa-google"></i>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <div class="copy">
+      <h5><i style="font-size: 15px;" class="fa-regular fa-copyright"></i>Copyright. 2024 by The Ticket Pvt LTD. All
+        rights Reserved.</h5>
+    </div>
+  </footer>
+
+  <script>
+    // navbar
+
+
+    // add to cart
+    const btnCart=document.querySelector('#cart-icon');
+const cart=document.querySelector('.cart');
+const btnClose=document.querySelector('#cart-close');
+
+btnCart.addEventListener('click',()=>{
+  cart.classList.add('cart-active');
+});
+
+btnClose.addEventListener('click',()=>{
+  cart.classList.remove('cart-active');
+});
+
+document.addEventListener('DOMContentLoaded',loadFood);
+
+function loadFood(){
+  loadContent();
+
+}
+
+function loadContent(){
+  //Remove Food Items  From Cart
+  let btnRemove=document.querySelectorAll('.cart-remove');
+  btnRemove.forEach((btn)=>{
+    btn.addEventListener('click',removeItem);
+  });
+
+  //Product Item Change Event
+  let qtyElements=document.querySelectorAll('.cart-quantity');
+  qtyElements.forEach((input)=>{
+    input.addEventListener('change',changeQty);
+  });
+
+  //Product Cart
+  
+  let cartBtns=document.querySelectorAll('.add-cart');
+  cartBtns.forEach((btn)=>{
+    btn.addEventListener('click',addCart);
+  });
+
+  updateTotal();
+}
+
+
+//Remove Item
+function removeItem(){
+  if(confirm('Are Your Sure to Remove')){
+    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
+    itemList=itemList.filter(el=>el.title!=title);
+    this.parentElement.remove();
+    loadContent();
+  }
+}
+
+//Change Quantity
+function changeQty(){
+  if(isNaN(this.value) || this.value<1){
+    this.value=1;
+  }
+  loadContent();
+}
+
+let itemList=[];
+
+//Add Cart
+function addCart(){
+ let food=this.parentElement;
+ let title=food.querySelector('.food-title').innerHTML;
+ let price=food.querySelector('.food-price').innerHTML;
+ let imgSrc=food.querySelector('.food-img').src;
+ //console.log(title,price,imgSrc);
+ 
+ let newProduct={title,price,imgSrc}
+
+ //Check Product already Exist in Cart
+ if(itemList.find((el)=>el.title==newProduct.title)){
+  alert("Product Already added in Cart");
+  return;
+ }else{
+  itemList.push(newProduct);
+ }
+
+
+let newProductElement= createCartProduct(title,price,imgSrc);
+let element=document.createElement('div');
+element.innerHTML=newProductElement;
+let cartBasket=document.querySelector('.cart-content');
+cartBasket.append(element);
+loadContent();
+}
+
+
+function createCartProduct(title,price,imgSrc){
+
+  return `
+  <div class="cart-box">
+  <img src="${imgSrc}" class="cart-img">
+  <div class="detail-box">
+    <div class="cart-food-title">${title}</div>
+    <div class="price-box">
+      <div class="cart-price">${price}</div>
+       <div class="cart-amt">${price}</div>
+   </div>
+    <input type="number" value="1" class="cart-quantity">
+  </div>
+  <ion-icon name="trash" class="cart-remove"></ion-icon>
+</div>
+  `;
+}
+
+function updateTotal()
+{
+  const cartItems=document.querySelectorAll('.cart-box');
+  const totalValue=document.querySelector('.total-price');
+
+  let total=0;
+
+  cartItems.forEach(product=>{
+    let priceElement=product.querySelector('.cart-price');
+    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+    let qty=product.querySelector('.cart-quantity').value;
+    total+=(price*qty);
+    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+
+  });
+
+  totalValue.innerHTML='Rs.'+total;
+
+
+  // Add Product Count in Cart Icon
+
+  const cartCount=document.querySelector('.cart-count');
+  let count=itemList.length;
+  cartCount.innerHTML=count;
+
+  if(count==0){
+    cartCount.style.display='none';
+  }else{
+    cartCount.style.display='block';
+  }
+}
+
+// Navbar
+function showSidebar(){
+    const l1 = document.querySelector('.l1');
+    l1.style.display = 'block'
+}
+function hideSidebar(){
+    const l1 = document.querySelector('.l1');
+    l1.style.display = 'none'
+}
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

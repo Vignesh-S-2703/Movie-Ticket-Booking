@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="logo">
+                <img src="the-ticket-logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search Ticket Booking">
+            </div>
+            <ul >
+            <li id="profile"><a href="#"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="black">
+                <path
+                    d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                
+                </svg><br> PROFILE</a>
+                <div class="login-page">
+                   <a href="login.html"> <button id="log">Log in</button> </a> <br>
+                   <a href="#"><button id="sing">Sign in</button> </a> <br><br><br>  
+                    <input type="checkbox" name="" id="" >I Already have a Account
+           </div></li>
+           </ul>
+            <div class="burger" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                    fill="#000000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <ul class="l1">
+        <li onclick="hideSidebar()" class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#ee3f3f">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movie.html">Movies</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="sport.html">Sports</a></li>
+        <li><a href="food.html">Foods</a></li>
+    </ul>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="banner1.png">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="banner2.png">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="banner3.png">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>  
+    </div>
+        <br>    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <br>
+    <div class="font"><h1>Recommended Movies</h1></div>
+    <div class="container2">
+        <marquee width="100%" direction="right" behavior="scroll" scrollamount="10">
+        <div class="RM-box">
+        <div class="card1 RM"><a href="A.html"><img src="A1.jpg" alt=""></a></div>
+        <div class="card2 RM"><a href="B.html"><img src="A2.jpg" alt=""></a></div>
+        <div class="card3 RM"><a href="C.html"><img src="A3.jpg" alt=""></a></div>
+        <div class="card4 RM"><a href="G.html"><img src="A4.jpg" alt=""></a></div>
+        <div class="card5 RM"><a href="D.html"><img src="A5.jpg" alt=""></a></div>
+        <div class="card6 RM"><a href="E.html"><img src="A6.jpg" alt=""></a></div>
+        <div class="card6 RM"><a href="F.html"><img src="A7.jpg" alt=""></a></div>
+    </marquee>
+    </div>
+    </div>
+
+    <div class="font1"><h1>Premiere</h1></div>
+    <div class="container3">
+        <div class="card6 pre"><img src="B1.jpg" alt=""></div>
+        <div class="card7 pre"><a href="#"><img src="B2.jpg" alt=""></a></div>
+        <div class="card8 pre"><a href="#"><img src="B3.jpg" alt=""></a></div>
+        <div class="card9 pre"><a href="#"><img src="B4.jpg" alt=""></a></div>
+        <div class="card10 pre"><a href=""><img src="B5.jpg" alt=""></a></div>
+    </div>
+
+    <div class="font2"><h1>IPL Matches</h1></div>
+    <div class="container4">
+        <div class="card10 ipl"><a href="sport.html"><img src="C1.jpG" alt=""></a></div>
+        <div class="card11 ipl"><a href="sport.html"><img src="C2.jpg" alt=""></a></div>
+        <div class="card12 ipl"><a href="sport.html"><img src="C3.jpg" alt=""></a></div>
+        <div class="card6 ipl"><a href="sport.html"><img src="C6.jpg" alt="img"></a></div>
+        <div class="card13 ipl"><a href="sport.html"><img src="C4.jpg" alt=""></a></div>
+    </div>
+
+    <div class="font1"><h1>Events</h1></div>
+    <div class="container5">
+        <div class="card6 pro"><a href="event.html"><img src="I1.jpg" alt=""></a></div>
+        <div class="card7 pro"><a href="event.html"><img src="I9.jpg" alt=""></a></div>
+        <div class="card8 pro"><a href="event.html"><img src="I3.jpg" alt=""></a></div>
+        <div class="card9 pro"><a href="event.html"><img src="I5.jpg" alt=""></a></div>
+        <div class="card10 pro"><a href="event.html"><img src="I8.jpg" alt=""></a></div>
+    </div>
+
+    <div class="font"><h1>Fun Activities for Kids</h1></div>
+    <div class="container1">
+        <div class="card14 fun"><a href=""><img src="H1.jpg" alt=""></a></div>
+        <div class="card15 fun"><a href=""><img src="H2.jpg" alt=""></a></div>
+        <div class="card16 fun"><a href=""><img src="H3.avif" alt=""></a></div>
+        <div class="card17 fun"><a href=""><img src="H4.jpg" alt=""></a></div>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="f1 f0"><img src="G3 (1).png" alt="img">
+                <p>Subcribe to the latest newsletter</p>
+            </div>
+            <div class="f2 f0"><img src="G3 (2).png" alt="img">
+                <p>24/7 Customer Support</p>
+            </div>
+            <div class="f3 f0"><img src="G3 (3).png" alt="img">
+                <p>Booking Confirmation</p>
+            </div>
+        </div>
+
+        <div class="icon">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+        <div class="copy">
+            <h5><i style="font-size: 15px;" class="fa-regular fa-copyright"></i>Copyright. 2024 by The Ticket Pvt LTD. All rights Reserved.</h5>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

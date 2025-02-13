@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Booking</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="logo">
+                <img src="the-ticket-logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search Ticket Booking">
+            </div>
+            <ul >
+                <li id="profile"><a href="#"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="black">
+                    <path
+                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                    
+                    </svg><br> PROFILE</a>
+                    <div class="login-page">
+                       <a href="login.html"> <button id="log">Log in</button> </a> <br>
+                       <a href="#"><button id="sing">Sign in</button> </a> <br><br><br>  
+                        <input type="checkbox" name="" id="" >I Already have a Account
+               </div></li>
+               </ul>
+            <div class="burger" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                    fill="#000000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+        <ul class="l1">
+            <li onclick="hideSidebar()" class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#ee3f3f">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="sport.html">Sports</a></li>
+            <li><a href="food.html">Foods</a></li>
+        </ul>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="MB1.png">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="MB2.png">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="MB3.png">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>  
+        </div>
+            <br>    
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <br>
+
+    <div class="events">
+    <h1>Concert Events</h1>
+    <div class="container2">
+        <div class="box1"><img src="E1.jpg" alt="img">
+            <button id="btns"><a href="A1.html">Book Your Tickets Now</a></button>
+        </div>
+        <div class="box2"><img src="E2.webp" alt="img">
+            <button id="btns"><a href="A2.html">Book Your Tickets Now</a></button>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="box3"><img src="E3.jpg" alt="img">
+            <button id="btns"><a href="">Book Your Tickets Now</a></button>
+        </div>
+        <div class="box4"><img src="E4.jpg" alt="img">
+            <button id="btns"><a href="">Book Your Tickets Now</a></button>
+        </div>
+    </div>
+</div>
+    
+<div class="style">
+    <h1>Other Events</h1>
+    <div class="container4">
+        <div class="box5 img"><img src="I1.jpg" alt="img">
+            <div class="info"><p>50 Years of Rajinism</p></div>
+        </div>
+        <div class="box6 img"><img src="I2.jpg" alt="img">
+            <div class="info"><p>Small World Open Mic</p></div>
+        </div>
+        <div class="box7 img"><img src="I3.jpg" alt="img">
+            <div class="info"><p>Karthik Live In Trichy</p></div>
+    </div>
+    </div>
+
+    <div class="container5">
+        <div class="box8 img"><img src="I4.jpg" alt="img">
+            <div class="info"><p>Olympian circus</p></div>
+            </div>
+        <div class="box9 img"><img src="I5.jpg" alt="img">
+            <div class="info"><p>Faiyaaz Hussain Live</p></div>
+            </div>
+        <div class="box10 img"><img src="I6.jpg">
+            <div class="info"><p>Small World Blind Date</p></div>
+            </div>
+    </div>
+
+
+    <div class="container6">
+        <div class="box11 img"><img src="I7.jpg" alt="img">
+            <div class="info"><p>Chai Pe Charcha</p></div>
+            </div>
+        <div class="box12 img"><img src="I8.jpg" alt="img">
+            <div class="info"><p>Epic Day Pass</p></div>
+            </div>
+        <div class="box13 img"><img src="I9.jpg" alt="img">
+            <div class="info"><p>Jonita Live In Coimbatore</p></div>
+            </div>
+    </div>
+</div>
+<footer>
+    <div class="footer1">
+        <div class="f1 f0"><img src="G3 (1).png" alt="img">
+            <p>Subcribe to the latest newsletter</p>
+        </div>
+        <div class="f2 f0"><img src="G3 (2).png" alt="img">
+            <p>24/7 Customer Support</p>
+        </div>
+        <div class="f3 f0"><img src="G3 (3).png" alt="img">
+            <p>Booking Confirmation</p>
+        </div>
+    </div>
+
+    <div class="icon">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <div class="copy">
+        <h5><i style="font-size: 15px;" class="fa-regular fa-copyright"></i>Copyright. 2024 by The Ticket Pvt LTD. All rights Reserved.</h5>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
